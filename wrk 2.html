@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background-color: bisque;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(241, 238, 238);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: rgb(236, 8, 8);
+        }
+
+        .details {
+            margin-left: 8%;
+            margin-top: 12%;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .one {
+            color: crimson;
+        }
+
+        .two {
+            color: rgb(250, 249, 247);
+        }
+
+        p {
+            color: rgb(19, 19, 20);
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        .initial, .up {
+            background-color: rgb(14, 13, 13);
+            color: aliceblue;
+            padding: 18px;
+            font-weight: bold;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .initial {
+            background-color: rgb(248, 155, 5);
+        }
+
+        .shape {
+            width: 25%;
+            height: 10%;
+            margin-left: 65%;
+            margin-top: -25%;
+            margin-right: 10%;
+        }
+
+        .main {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about-me {
+            background-color: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .about-me h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-me ul {
+            list-style-type: none;
+        }
+
+        .about-me ul li {
+            background-color: #f8f8f8;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="path/to/logo.jpeg" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#" class="up">HOME</a></li>
+                <li><a href="#section1" class="up">ABOUT ME</a></li>
+                <li><a href="#section2" class="up">PORTFOLIO</a></li>
+                <li><a href="#section3" class="up">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="details">
+            <h1><span class="one">I'm Tharani </span><span class="two">Sankar</span></h1>
+            <p>This is my portfolio. Here are the details to show.</p>
+            <a href="#section1" class="initial">Download Resume</a>
+            <img src="path/to/shape.jpeg" class="shape" alt="Shape">
+        </div>
+    </div>
+
+    <div class="main" id="section1">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Tharani Sankar, a passionate web developer with a strong interest in creating dynamic and responsive web applications. I have experience in front-end and back-end development and love to work on innovative projects that challenge my skills.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js, Angular</li>
+                <li>Node.js, Express</li>
+                <li>MongoDB, MySQL</li>
+                <li>Git, GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+            <h3>Experience</h3>
+            <p>Completed a 21-day internship at NoviTech R&D Private Limited in Coimbatore, where I worked on various web development projects and gained practical experience in the field.</p>
+        </div>
+    </div>
+
+    <div class="main" id="section2">
+        <h2>Portfolio</h2>
+        <p>Click on the link to see the "smooth" scrolling effect.</p>
+        <a href="#section3">Click Me to Smooth Scroll to Section 3 Below</a>
+    </div>
+      
+    <div class="main" id="section3">
+        <h2>Contact</h2>
+        <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+    </div>
+</body>
+</html>
